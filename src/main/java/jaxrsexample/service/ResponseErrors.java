@@ -10,7 +10,7 @@ public class ResponseErrors implements Serializable {
 
     private List<ResponseError> errors = new ArrayList<>();
 
-    void add(ResponseError error) {
+    public void add(ResponseError error) {
         getErrors().add(error);
     }
 

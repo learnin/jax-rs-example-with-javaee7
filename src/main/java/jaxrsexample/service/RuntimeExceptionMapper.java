@@ -3,8 +3,10 @@ package jaxrsexample.service;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
+import javax.ws.rs.ext.Provider;
 
-public class ResourceExceptionMapper implements ExceptionMapper<RuntimeException> {
+@Provider
+public class RuntimeExceptionMapper implements ExceptionMapper<RuntimeException> {
 
     @Override
     public Response toResponse(RuntimeException e) {

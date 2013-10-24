@@ -26,6 +26,7 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(jaxrsexample.service.BooksResource.class);
+        resources.add(jaxrsexample.service.RuntimeExceptionMapper.class);
     }
     
 }
